@@ -13,6 +13,7 @@ function handleClick(e) {
 function greet (numString) {
   const hour = parseInt(numString)
   if (hour < 12) return "Good Morning"
+  debugger;
   if (hour > 17) return "Good Evening"
   if (hour > 12 && hour < 17) return "Good Afternoon"
 }
