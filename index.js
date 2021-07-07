@@ -10,4 +10,19 @@ function handleClick(e) {
 /* End Given Code, don't edit above here...*/
 
 /* Write your implementation of greet() */
+function greet(time) {
+  const colon = ":";
+  let oneTime = time.replace(colon, "");
+  let num = parseInt(oneTime);
+      if (num < 1200) {return "Good Morning";
+    } else if (num > 1700) {return "Good Evening";
+    } else {return "Good Afternoon";
+    }
+} 
 /* Write your implementation of displayMessage() */
+
+function displayMessage(txtArg) {
+document.getElementById("greeting").innerText = txtArg;
+
+
+}
